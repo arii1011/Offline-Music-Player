@@ -1,0 +1,93 @@
+<!-- Made by- DEV MAKTUPORIA -->
+<!-- Project Name:- Music player -->
+<html>
+<head>
+    <title>Music player</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>    
+<body class="screen">
+   <input type="checkbox" value="None" id="magicButton" name="check" />
+    <label class="main" for="magicButton"></label>
+    <img class="coverImage" id="cover" src="https://c.saavncdn.com/222/Raataan-Lambiyan-From-Shershaah--Hindi-2021-20210729181107-500x500.jpg">
+    <div class="bodyPlayer"></div>
+    <table class="list"> 
+                    <tr class="song" id="song1">
+                          <td class="nr"><h5>1<h5></td>
+                          <td class="title"><button id="b1" onclick="btn1()">Raataan Lambiyan</button></td>
+                          <td class="length"><h5>3:50<h5></td>
+                          <td><input type="checkbox" id="heart"/>
+                            <label class="zmr" for="heart"></label>
+                        </td>
+                      </tr>
+                      <tr class="song" id="song2">
+                          <td class="nr"><h5>2<h5></td>
+                          <td class="title"><button id="b1" onclick="btn2()">Kesariya</button></td>
+                          <td class="length"><h5>4:28<h5></td>
+                          <td><input type="checkbox" id="heart1" checked /><label class="zmr" for="heart1"></label></td>
+                      </tr>
+                      <tr class="song" id="song3">
+                          <td class="nr"><h5>3<h5></td>
+                          <td class="title"><button id="b1" onclick="btn3()">Mehbooba</button></td>
+                          <td class="length"><h5>4:08<h5></td>
+                          <td><input type="checkbox" id="heart2"/><label class="zmr" for="heart2"></label></td>
+                      </tr>
+                      <tr class="song" id="song4">
+                          <td class="nr"><h5>4<h5></td>
+                          <td class="title"><button id="b1" onclick="btn4()">Apna Bana Le</button></td>
+                          <td class="length"><h5>4:21<h5></td>
+                          <td><input type="checkbox" id="heart3" checked /><label class="zmr" for="heart3"></label></td>
+                      </tr>
+                      
+                      <tr class="song" id="song5">
+                          <td class="nr"><h5>5<h5></td>
+                          <td class="title"><button id="b1" onclick="btn5()">Maan Meri Jaan</button></td>
+                          <td class="length"><h5>3:14<h5></td>
+                          <td><input type="checkbox" id="heart4"/><label class="zmr" for="heart4"></label></td>
+                      </tr>
+                      <tr class="song" id="song6">
+                          <td class="nr"><h5>6<h5></td>
+                          <td class="title"><button id="b1" onclick="btn6()">Deva Deva</button></td>
+                          <td class="length"><h5>4:39<h5></td>
+                          <td><input type="checkbox" id="heart5"/><label class="zmr" for="heart5"></label></td>
+                      </tr>
+                      <tr class="song" id="song7">
+                          <td class="nr"><h5>7<h5></td>
+                          <td class="title"><button id="b1" onclick="btn7()">Tum Mere</button></td>
+                          <td class="length"><h5>3:48<h5></td>
+                          <td><input type="checkbox" id="heart6"/><label class="zmr" for="heart6"></label></td>
+                      </tr>
+                      <tr class="song" id="song8">
+                          <td class="nr"><h5>8<h5></td>
+                          <td class="title"><button id="b1" onclick="btn8()">O Bedardeya</button></td>
+                          <td class="length"><h5>2:51<h5></td>
+                          <td><input type="checkbox" id="heart7"/><label class="zmr" for="heart7"></label></td>
+                      </tr>
+                  </table>
+                  <div class="shadow"></div>
+                  <div class="bar"></div>
+                  <div class="info" id="info">
+                      <h4 style="justify-self: center;">Rataan Lambiyan</h4>
+                      <h3 style="justify-self: center;margin-left: 20px;">Jubin Nautiyal - Shershaah</h3>
+                  </div>
+                  <audio preload="auto" id="audio" controls>
+                    <source id="source" src="Kesariya.mp3">
+                      </audio>
+                  <table class="player">
+                      <td><button style="height:100%; width:80%;" id="backward" onclick="backward()"><img src="backward.png" height="100%" width="100%"></button>
+                      </td>
+                      <td><button style="height:100%; width:80%;" id="play" title="Play" onclick="togglePlayPause()">
+                        <img id="image" src="play.png" height="100%" width="100%"></button>
+                    </td>
+                      <td><button style="height:100%; width:80%;" id="forward" onclick="forward()"><img src="forward.png" height="100%" width="100%"></button>
+                    </td>
+                  </table>
+                  <table class="footer">
+                      <td><input type="checkbox" id="love" checked /><label class="love" for="love"></label></td>
+                      <td><input type="checkbox" id="shuffle"/><label class="shuffle" for="shuffle"></label></td>
+                      <td><input type="checkbox" id="repeat" checked /><label class="repeat" for="repeat"></label></td>
+                      <td><input type="checkbox" id="options"/><label class="options" for="options"></label></td>
+                  </table>
+                  <script src="main.js"></script>
+                </body>
+                </html>
